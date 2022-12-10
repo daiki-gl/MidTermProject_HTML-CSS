@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/reseter.css/2.0.0/reseter.min.css"
+      integrity="sha512-gCJkkUMGTe73+FMwog6gIBCVJIMXRoc21l6/IPCuzxCex/1sxvO8ctb6Zd4/WWs2UMqmtnDrAdhJht5pEY0LXg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styling/style.css" />
+    <title>No Shoes No Life</title>
+  </head>
+  <body>
+    <!-- ===================================
+     Header
+    =================================== -->
+    <header class="header">
+      <div class="header__container flex">
+        <h1>
+          <a href="#">
+            <img src="./assets/logo.png" alt="No Shoes No Life" class="logo" />
+          </a>
+        </h1>
+
+        <div id="nav-drawer" class="hamburger-box md--show">
+          <input id="nav-input" type="checkbox" class="hide-checkbox" />
+          <label class="hamberger" for="nav-input"><span></span></label>
+          <label class="nav-close" for="nav-input"></label>
+
+          <div class="hamburger__content">
+            <div class="header__functions-box flex">
+              <div class="header__search-bar-box">
+                <input
+                  type="text"
+                  class="header__search-bar"
+                  placeholder="Search"
+                />
+                <button class="search-btn">
+                  <i class="fa-solid fa-magnifying-glass icon"></i>
+                </button>
+              </div>
+              <a href="#" class="header__login-box">
+                <i class="fa-solid fa-user icon"></i>
+              </a>
+              <a href="#" class="header__cart-box">
+                <i class="fa-solid fa-cart-shopping icon"></i>
+              </a>
+            </div>
+
+            <ul class="header__list flex">
+              <li class="header__list-item">
+                <a href="#" class="header__list-item-link">Men</a>
+                <ul class="header__second-list">
+                  <li class="header__second-list-item">
+                    <a href="#" class="header__second-list-item-link">All</a>
+                  </li>
+                  <li class="header__second-list-item">
+                    <a href="#" class="header__second-list-item-link"
+                      >Featured</a
+                    >
+                  </li>
+                  <li class="header__second-list-item">
+                    <a href="#" class="header__second-list-item-link"
+                      >New Arrivals</a
+                    >
+                  </li>
+                  <li class="header__second-list-item">
+                    <a href="#" class="header__second-list-item-link"
+                      >Life Style</a
+                    >
+                  </li>
+                  <li class="header__second-list-item">
+                    <a href="#" class="header__second-list-item-link"
+                      >Running</a
+                    >
+                  </li>
+                  <li class="header__second-list-item">
+                    <a href="#" class="header__second-list-item-link">Soccer</a>
+                  </li>
+                  <li class="header__second-list-item">
+                    <a href="#" class="header__second-list-item-link"
+                      >Basket bal</a
+                    >
+                  </li>
+                  <li class="header__second-list-item">
+                    <a href="#" class="header__second-list-item-link"
+                      >Life Style</a
+                    >
+                  </li>
+                  <li class="header__second-list-item">
+                    <a href="#" class="header__second-list-item-link">Sale</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header__list-item">
+                <a href="#" class="header__list-item-link">Women</a>
+                <ul class="header__second-list">
+                  <li class="header__second-list-item">
+                    <a href="#" class="header__second-list-item-link">All</a>
+                  </li>
+                  <li class="header__second-list-item">
+                    <a href="#" class="header__second-list-item-link"
+                      >Featured</a
+                    >
+                  </li>
+                  <li class="header__second-list-item">
+                    <a href="#" class="header__second-list-item-link"
+                      >New Arrivals</a
+                    >
+                  </li>
+                  <li class="header__second-list-item">
+                    <a href="#" class="header__second-list-item-link"
+                      >Life Style</a
+                    >
+                  </li>
+                  <li class="header__second-list-item">
+                    <a href="#" class="header__second-list-item-link"
+                      >Running</a
+                    >
+                  </li>
+                  <li class="header__second-list-item">
+                    <a href="#" class="header__second-list-item-link">Soccer</a>
+                  </li>
+                  <li class="header__second-list-item">
+                    <a href="#" class="header__second-list-item-link"
+                      >Basket bal</a
+                    >
+                  </li>
+                  <li class="header__second-list-item">
+                    <a href="#" class="header__second-list-item-link"
+                      >Life Style</a
+                    >
+                  </li>
+                  <li class="header__second-list-item">
+                    <a href="#" class="header__second-list-item-link">Sale</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header__list-item">
+                <a href="#" class="header__list-item-link">Kids</a>
+                <ul class="header__second-list">
+                  <li class="header__second-list-item">
+                    <a href="#" class="header__second-list-item-link">All</a>
+                  </li>
+                  <li class="header__second-list-item">
+                    <a href="#" class="header__second-list-item-link"
+                      >Featured</a
+                    >
+                  </li>
+                  <li class="header__second-list-item">
+                    <a href="#" class="header__second-list-item-link"
+                      >New Arrivals</a
+                    >
+                  </li>
+                  <li class="header__second-list-item">
+                    <a href="#" class="header__second-list-item-link"
+                      >Life Style</a
+                    >
+                  </li>
+                  <li class="header__second-list-item">
+                    <a href="#" class="header__second-list-item-link"
+                      >Running</a
+                    >
+                  </li>
+                  <li class="header__second-list-item">
+                    <a href="#" class="header__second-list-item-link">Soccer</a>
+                  </li>
+                  <li class="header__second-list-item">
+                    <a href="#" class="header__second-list-item-link"
+                      >Basket bal</a
+                    >
+                  </li>
+                  <li class="header__second-list-item">
+                    <a href="#" class="header__second-list-item-link"
+                      >Life Style</a
+                    >
+                  </li>
+                  <li class="header__second-list-item">
+                    <a href="#" class="header__second-list-item-link">Sale</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="header__list-item">
+                <a href="#" class="header__list-item-link">New Arrivals</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <ul class="header__list flex md--hide">
+          <li class="header__list-item">
+            <a href="#" class="header__list-item-link">Men</a>
+            <ul class="header__second-list">
+              <li class="header__second-list-item">
+                <a href="#" class="header__second-list-item-link">All</a>
+              </li>
+              <li class="header__second-list-item">
+                <a href="#" class="header__second-list-item-link">Featured</a>
+              </li>
+              <li class="header__second-list-item">
+                <a href="#" class="header__second-list-item-link"
+                  >New Arrivals</a
+                >
+              </li>
+              <li class="header__second-list-item">
+                <a href="#" class="header__second-list-item-link">Life Style</a>
+              </li>
+              <li class="header__second-list-item">
+                <a href="#" class="header__second-list-item-link">Running</a>
+              </li>
+              <li class="header__second-list-item">
+                <a href="#" class="header__second-list-item-link">Soccer</a>
+              </li>
+              <li class="header__second-list-item">
+                <a href="#" class="header__second-list-item-link">Basket bal</a>
+              </li>
+              <li class="header__second-list-item">
+                <a href="#" class="header__second-list-item-link">Life Style</a>
+              </li>
+              <li class="header__second-list-item">
+                <a href="#" class="header__second-list-item-link">Sale</a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__list-item">
+            <a href="#" class="header__list-item-link">Women</a>
+            <ul class="header__second-list">
+              <li class="header__second-list-item">
+                <a href="#" class="header__second-list-item-link">All</a>
+              </li>
+              <li class="header__second-list-item">
+                <a href="#" class="header__second-list-item-link">Featured</a>
+              </li>
+              <li class="header__second-list-item">
+                <a href="#" class="header__second-list-item-link"
+                  >New Arrivals</a
+                >
+              </li>
+              <li class="header__second-list-item">
+                <a href="#" class="header__second-list-item-link">Life Style</a>
+              </li>
+              <li class="header__second-list-item">
+                <a href="#" class="header__second-list-item-link">Running</a>
+              </li>
+              <li class="header__second-list-item">
+                <a href="#" class="header__second-list-item-link">Soccer</a>
+              </li>
+              <li class="header__second-list-item">
+                <a href="#" class="header__second-list-item-link">Basket bal</a>
+              </li>
+              <li class="header__second-list-item">
+                <a href="#" class="header__second-list-item-link">Life Style</a>
+              </li>
+              <li class="header__second-list-item">
+                <a href="#" class="header__second-list-item-link">Sale</a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__list-item">
+            <a href="#" class="header__list-item-link">Kids</a>
+            <ul class="header__second-list">
+              <li class="header__second-list-item">
+                <a href="#" class="header__second-list-item-link">All</a>
+              </li>
+              <li class="header__second-list-item">
+                <a href="#" class="header__second-list-item-link">Featured</a>
+              </li>
+              <li class="header__second-list-item">
+                <a href="#" class="header__second-list-item-link"
+                  >New Arrivals</a
+                >
+              </li>
+              <li class="header__second-list-item">
+                <a href="#" class="header__second-list-item-link">Life Style</a>
+              </li>
+              <li class="header__second-list-item">
+                <a href="#" class="header__second-list-item-link">Running</a>
+              </li>
+              <li class="header__second-list-item">
+                <a href="#" class="header__second-list-item-link">Soccer</a>
+              </li>
+              <li class="header__second-list-item">
+                <a href="#" class="header__second-list-item-link">Basket bal</a>
+              </li>
+              <li class="header__second-list-item">
+                <a href="#" class="header__second-list-item-link">Life Style</a>
+              </li>
+              <li class="header__second-list-item">
+                <a href="#" class="header__second-list-item-link">Sale</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="header__list-item">
+            <a href="#" class="header__list-item-link">New Arrivals</a>
+          </li>
+        </ul>
+
+        <div class="header__functions-box flex md--hide">
+          <div class="header__search-bar-box">
+            <input
+              type="text"
+              class="header__search-bar"
+              placeholder="Search"
+            />
+            <button class="search-btn">
+              <i class="fa-solid fa-magnifying-glass icon"></i>
+            </button>
+          </div>
+          <a href="#" class="header__login-box">
+            <i class="fa-solid fa-user icon"></i>
+          </a>
+          <a href="#" class="header__cart-box">
+            <i class="fa-solid fa-cart-shopping icon"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ===================================
+     Main
+    =================================== -->
+    <main>
+      <section class="hero">
+        <div class="hero__container">
+          <video
+            src="./assets/hero.mp4"
+            type="video/mp.4"
+            class="hero__video video"
+            autoplay
+            muted
+            loop
+          ></video>
+          <div class="hero__contents">
+            <h2 class="hero__title text--white">
+              NO SHOES<br class="sp" />
+              NO LIFE
+            </h2>
+            <a href="#" class="btn btn--black center"><span>Shop Now</span></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================
+       styles
+      =================================== -->
+      <section class="styles container">
+        <div class="styles__container flex">
+          <div class="styles__item styles__item-lifestyle">
+            <img
+              src="./assets/styles-item1.jpg"
+              alt="Life Style"
+              class="styles__img"
+            />
+            <div class="styles__contents-box">
+              <p class="styles__item-title text--white">LIFE STYLE</p>
+              <a href="#" class="btn"><span>Shop Now</span></a>
+            </div>
+          </div>
+
+          <div class="styes__items-right flex">
+            <div class="styles__item styles__item-sport">
+              <img
+                src="./assets/styles-item2.jpg"
+                alt="Sports"
+                class="styles__img"
+              />
+              <div class="styles__contents-box">
+                <p class="styles__item-title text--white">SPORTS</p>
+                <a href="#" class="btn"><span>Shop Now</span></a>
+              </div>
+            </div>
+
+            <div class="styles__item styles__item-women">
+              <img
+                src="./assets/styles-item3.jpg"
+                alt="Women"
+                class="styles__img"
+              />
+              <div class="styles__contents-box">
+                <p class="styles__item-title text--white">WOMEN</p>
+                <a href="#" class="btn"><span>Shop Now</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================
+       trending
+      =================================== -->
+      <section class="trending container">
+        <h2 class="title">Trending</h2>
+        <div class="trending__container">
+          <div class="trending__item-box">
+            <a>
+              <div class="trending__item-img-box">
+                <img
+                  src="./assets/trending-item.jpg"
+                  alt="trending item"
+                  class="trending__item-img"
+                />
+              </div>
+              <h3 class="item-title">Gray Sneaker</h3>
+              <span class="price">$35</span>
+            </a>
+          </div>
+
+          <div class="trending__item-box">
+            <a>
+              <div class="trending__item-img-box">
+                <img
+                  src="./assets/trending-item2.jpg"
+                  alt="trending item"
+                  class="trending__item-img"
+                />
+              </div>
+              <h3 class="item-title">White Sneaker</h3>
+              <span class="price">$67</span>
+            </a>
+          </div>
+
+          <div class="trending__item-box">
+            <a>
+              <div class="trending__item-img-box">
+                <img
+                  src="./assets/trending-item3.jpg"
+                  alt="trending item"
+                  class="trending__item-img"
+                />
+              </div>
+              <h3 class="item-title">Red Shoes</h3>
+              <span class="price">$85</span>
+            </a>
+          </div>
+
+          <div class="trending__item-box">
+            <a>
+              <div class="trending__item-img-box">
+                <img
+                  src="./assets/trending-item4.jpg"
+                  alt="trending item"
+                  class="trending__item-img"
+                />
+              </div>
+              <h3 class="item-title">Black Shoes</h3>
+              <span class="price">$30</span>
+            </a>
+          </div>
+
+          <div class="trending__item-box">
+            <a>
+              <div class="trending__item-img-box">
+                <img
+                  src="./assets/trending-item5.jpg"
+                  alt="trending item"
+                  class="trending__item-img"
+                />
+              </div>
+              <h3 class="item-title">Character Sneaker</h3>
+              <span class="price">$55</span>
+            </a>
+          </div>
+
+          <div class="trending__item-box">
+            <a>
+              <div class="trending__item-img-box">
+                <img
+                  src="./assets/trending-item6.jpg"
+                  alt="trending item"
+                  class="trending__item-img"
+                />
+              </div>
+              <h3 class="item-title">White Shoes</h3>
+              <span class="price">$198</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================
+        new arrivals
+        =================================== -->
+      <section class="new-arrivals container">
+        <!-- ===================================
+           Infinite Scroll
+          ================================== -->
+        <div class="infinite-scroll">
+          <div class="infinite-scroll-container">
+            <div class="infinite-scroll-box">
+              <ul class="infinite-list-left">
+                <li class="infinite-item">NO SHOES NO LIFE</li>
+                <li class="infinite-item">NO SHOES NO LIFE</li>
+              </ul>
+              <ul class="infinite-list-left">
+                <li class="infinite-item">NO SHOES NO LIFE</li>
+                <li class="infinite-item">NO SHOES NO LIFE</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="infinite-scroll-container">
+            <div class="infinite-scroll-box">
+              <ul class="infinite-list-right">
+                <li class="infinite-item">NO SHOES NO LIFE</li>
+                <li class="infinite-item">NO SHOES NO LIFE</li>
+              </ul>
+              <ul class="infinite-list-right">
+                <li class="infinite-item">NO SHOES NO LIFE</li>
+                <li class="infinite-item">NO SHOES NO LIFE</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="title">New Arrivals</h2>
+        <div class="new-arrivals__container flex">
+          <div class="new-arrivals__container-img-box">
+            <img
+              src="./assets/newarrival.jpg"
+              alt="new arrivals"
+              class="new-arrivals__container-img"
+            />
+            <a href="#" class="btn new-arrivals-btn"
+              ><span>New Arrivals</span></a
+            >
+          </div>
+
+          <div class="new-arrivals__items-container">
+            <div class="new-arrivals__item-box">
+              <a>
+                <div class="new-arrivals__item-img-box">
+                  <img
+                    src="./assets/newarrival-item2.jpg"
+                    alt="new arrival item"
+                    class="new-arrivals__item-img"
+                  />
+                </div>
+                <div class="new-arrival__item-content">
+                  <h3 class="item-title">White Shoes</h3>
+                  <span class="price">$170</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="new-arrivals__items-container">
+            <div class="new-arrivals__item-box">
+              <a>
+                <div class="new-arrivals__item-img-box">
+                  <img
+                    src="./assets/newarrival-item.jpg"
+                    alt="new arrival item"
+                    class="new-arrivals__item-img"
+                  />
+                </div>
+                <div class="new-arrival__item-content">
+                  <h3 class="item-title">Yellow Shoes</h3>
+                  <span class="price">$155</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================
+       Sale
+      =================================== -->
+      <section class="sale container">
+        <div class="sale__container">
+          <h2 class="sale-title text--white">Sale Items</h2>
+        </div>
+        <a href="" class="btn btn--black sale-btn"><span>Sale Items</span></a>
+      </section>
+
+      <!-- ===================================
+       Membership
+      =================================== -->
+      <section class="membership container">
+        <div class="membership__container flex">
+          <div class="membership__container-left"></div>
+
+          <div class="membership__container-middle membership__contents">
+            <h2 class="title text--white">Membership</h2>
+            <p class="text--white">Join us our membership!</p>
+            <p class="text--white">
+              If you are interested, check our membership benefits
+            </p>
+            <a href="#" class="btn"><span>Join Us</span></a>
+          </div>
+
+          <div class="membership__container-right"></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===================================
+     Footer
+    =================================== -->
+    <footer class="footer">
+      <div class="footer__container flex">
+        <div class="footer__container-item-box footer__logo-box">
+          <a href="#">
+            <img src="./assets/logo.png" alt="logo" />
+          </a>
+        </div>
+
+        <ul class="footer__container-item-box footer__list">
+          <p class="footer__list-item-title">Get Help</p>
+          <li class="footer__list-item">
+            <a href="#" class="footer__list-item-link">Contact Us</a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#" class="footer__list-item-link">Shipping & Delivery</a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#" class="footer__list-item-link">Orders & Returns</a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#" class="footer__list-item-link">FAQ</a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#" class="footer__list-item-link">Payment Options</a>
+          </li>
+        </ul>
+
+        <ul class="footer__container-item-box footer__list">
+          <p class="footer__list-item-title">About Us</p>
+          <li class="footer__list-item">
+            <a href="#" class="footer__list-item-link">Careers & Cultures</a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#" class="footer__list-item-link">News</a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#" class="footer__list-item-link">Investors</a>
+          </li>
+        </ul>
+
+        <div class="footer__sns-container footer__container-item-box">
+          <p class="footer__sns-title">Follow us:</p>
+          <a href="#" class="text--white">
+            <i class="fa-brands fa-twitter icon"></i>
+          </a>
+          <a href="#" class="text--white">
+            <i class="fa-brands fa-instagram icon"></i>
+          </a>
+          <a href="#" class="text--white">
+            <i class="fa-brands fa-facebook icon"></i>
+          </a>
+        </div>
+      </div>
+      <hr class="text--white" />
+      <span class="copyright">&copy;2022 NSNL, Inc. All rights reserved.</span>
+    </footer>
+  </body>
+</html>
